@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess My Number!</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
   </head>
+
   <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p>(Between 1 and 20)</p>
-      <button>Again!</button>
-      <div>?</div>
+    <header class="header">
+      <h1 class="header__title">Guess My Number!</h1>
+      <p class="header__subtitle">(Between 1 and 20)</p>
+      <button class="header__button button">Again!</button>
+      <div class="header__mystery-number">?</div>
     </header>
-    <main>
-      <section>
-        <input type="number" />
-        <button>Check!</button>
+
+    <main class="main">
+      <section class="guess-section">
+        <input class="guess-section__input input" type="number" />
+        <button class="guess-section__button button">Check!</button>
       </section>
-      <section>
-        <p>Start guessing...</p>
-        <p>Score: <span>20</span></p>
-        <p>Highscore: <span>0</span></p>
+      <section class="game-info-section">
+        <p class="game-info-section__message">Start guessing...</p>
+        <p class="game-info-section__score">Score: <span class="game-info-section__score-value">20</span></p>
+        <p class="game-info-section__highscore">Highscore: <span class="game-info-section__highscore-value">0</span></p>
+      </section>
+
+      <!-- USUNAC check-->
+      <hr>
+      <section class="check">
+        <p>Liczba wygenerowana przez funckję
+          <span>
+            <code>Math.floor(Math.random() * 20) + 1;</code>
+          </span>
+        </p>
+        <div class="header__mystery-number-2">?</div>
       </section>
     </main>
     <!-- TO DO 
     1. icony , Score, Highscore
-    2. css + BEM
+    2. css 
     3. JS 
     -->
+    <script src="script.js"></script>
   </body>
+
 </html>
