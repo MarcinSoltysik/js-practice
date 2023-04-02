@@ -3,14 +3,45 @@
 const mysteryNumber = document.querySelector('.header__mystery-number');
 console.log(mysteryNumber.textContent);
 
+const guessNumber = document.querySelector('.guess-section__input');
+const checkNumber = document.querySelector('.guess-section__button');
+const message = document.querySelector('.game-info-section__message');
+console.log(message.textContent);
+
+// generuje liczbe, do zgadniecia
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 console.log(secretNumber);
-
-// document.querySelector('.header__mystery-number').textContent = secretNumber;
+// wyswietlasz wylosowana liczbe
 mysteryNumber.textContent = secretNumber;
 
-const checkNumber = document.querySelector('.header__mystery-number-2');
-checkNumber.textContent = secretNumber;
+// przy[adki
+// 1 nie wporwadziles liczby // info brak liczby
+// wprowadziles i jest zgodna /. info win
+// liczba jest inna od sekretnej
+// albo za wysoka // za wysoko
+// albo za niska  // za nisko
+// pobierasz liczbe wprowadzona przez gracza i porownujesz ja z liczba sekretna
+
+checkNumber.addEventListener('click', function () {
+  // const guess1 = guessNumber.value;
+  // console.log(guess1, typeof guess1);
+  const guess = Number(guessNumber.value);
+  console.log(guess, typeof guess);
+
+  if (!guess) {
+    message.textContent = 'No Number!, Enter a Number :)';
+  } else if (guess === secretNumber) {
+    message.textContent = 'Correct number';
+  }
+});
+
+//
+// usunac
+//
+// check
+
+const checkNumber2 = document.querySelector('.header__mystery-number-2');
+checkNumber2.textContent = secretNumber;
 
 /* memo 
 
@@ -74,5 +105,15 @@ In this specific case, the difference between the two approaches is negligible b
 However, in general, if the upper bound of the range is not an integer, using Math.floor() will be more appropriate to ensure that the generated number is always less than or equal to the upper bound.
 
 So, in conclusion, for generating random integers within a range that starts at 1 and ends at an integer, both Math.floor(Math.random() * range) + 1 and Math.trunc(Math.random() * range) + 1 are valid options. However, Math.floor() is more appropriate if the upper bound of the range is not an integer.
+
+
+
+
+// To tu taj to masz stringa a musisz porowanc z liczba
+checkNumber.addEventListener('click', function () {
+  const guess = guessNumber.value;
+  console.log(guess, typeof guess);
+});
+
 
 */
