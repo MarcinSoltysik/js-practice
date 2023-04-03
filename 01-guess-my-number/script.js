@@ -16,19 +16,12 @@ checkNumber.addEventListener('click', function () {
   const guess = Number(guessNumber.value);
 
   if (!guess) {
-    // message.textContent = '🫤 No number! Enter a Number';
     displayMessage('🫤 No number! Enter a Number');
   } else if (guess === secretNumber) {
-    // message.textContent = '😀 Correct Number! You WIN 🥳';
     displayMessage('😀 Correct Number! You WIN 🥳');
-  } else if (guess > secretNumber) {
-    // message.textContent = '⬆️ Too hight!';
-    displayMessage('⬆️ Too hight!');
-  } else if (guess < secretNumber) {
-    // message.textContent = '⬇️ Too low!';
-    displayMessage('⬇️ Too low!');
+  } else if (guess !== secretNumber) {
+    displayMessage(guess > secretNumber ? '⬆️ Too hight!' : '⬇️ Too low!');
   } else {
-    // message.textContent = '😭 You lost the game.';
     displayMessage('😭 You lost the game.');
   }
 });
