@@ -4,15 +4,16 @@ const mysteryNumber = document.querySelector('.header__mystery-number');
 const guessNumber = document.querySelector('.guess-section__input');
 const checkNumber = document.querySelector('.guess-section__button');
 const message = document.querySelector('.game-info-section__message');
+const again = document.querySelector('.header__button');
 
 const infoScore = document.querySelector('.game-info-section__score-value');
 const infoHighScore = document.querySelector(
   '.game-info-section__highscore-value'
 );
 
-let secretNumber = Math.floor(Math.random() * 20) + 1;
-mysteryNumber.textContent = secretNumber;
+const body = document.querySelector('body');
 
+let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
 
@@ -27,6 +28,9 @@ checkNumber.addEventListener('click', function () {
     displayMessage('🫤 No number! Enter a Number');
   } else if (guess === secretNumber) {
     displayMessage('😀 Correct Number! You WIN 🥳');
+    mysteryNumber.textContent = secretNumber;
+    body.style.backgroundColor = '#60b347';
+    mysteryNumber.style.width = '30rem';
 
     if (score > highScore) {
       highScore = score;
