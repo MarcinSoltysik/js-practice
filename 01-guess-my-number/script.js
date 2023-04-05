@@ -20,6 +20,9 @@ let highScore = 0;
 const displayMessage = function (notice) {
   message.textContent = notice;
 };
+const displayScore = function (score) {
+  infoScore.textContent = score;
+};
 
 checkNumber.addEventListener('click', function () {
   const guess = Number(guessNumber.value);
@@ -40,9 +43,13 @@ checkNumber.addEventListener('click', function () {
     if (score > 1) {
       displayMessage(guess > secretNumber ? '⬆️ Too hight!' : '⬇️ Too low!');
       score--;
-      infoScore.textContent = score;
+      // Zrób to w funkcji
+      // infoScore.textContent = score;
+      displayScore(score);
     } else {
       displayMessage('😭 You lost the game.');
-      infoScore.textContent = 0;
+      // Zrób to w funkcji
+      // infoScore.textContent = 0;
+      displayScore(0);
     }
 });
