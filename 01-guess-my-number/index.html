@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess My Number!</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Guess My Number!</h1>
+      <p class="header__subtitle">(Between 1 and 20)</p>
+      <button class="header__button header__button--again button">Again!</button>
+      <div class="header__mystery-number">?</div>
+    </header>
+
+    <main class="main">
+      <section class="guess-section">
+        <input class="guess-section__input" type="number" />
+        <button class="guess-section__button button">Check!</button>
+      </section>
+      <section class="game-info-section">
+        <p class="game-info-section__message">Start guessing...</p>
+        <p class="game-info-section__score">Score: <span class="game-info-section__score-value">20</span></p>
+        <p class="game-info-section__highscore">Highscore: <span class="game-info-section__highscore-value">0</span></p>
+      </section>
+    </main>
+    <footer>
+      <span>#1, 04-2023</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
