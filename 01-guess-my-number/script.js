@@ -4,7 +4,7 @@ const mysteryNumber = document.querySelector('.header__mystery-number');
 const guessNumber = document.querySelector('.guess-section__input');
 const checkNumber = document.querySelector('.guess-section__button');
 const message = document.querySelector('.game-info-section__message');
-const again = document.querySelector('.header__button');
+const again = document.querySelector('.header__button--again');
 
 const infoScore = document.querySelector('.game-info-section__score-value');
 const infoHighScore = document.querySelector(
@@ -43,13 +43,20 @@ checkNumber.addEventListener('click', function () {
     if (score > 1) {
       displayMessage(guess > secretNumber ? '⬆️ Too hight!' : '⬇️ Too low!');
       score--;
-      // Zrób to w funkcji
-      // infoScore.textContent = score;
       displayScore(score);
     } else {
       displayMessage('😭 You lost the game.');
-      // Zrób to w funkcji
-      // infoScore.textContent = 0;
       displayScore(0);
     }
+});
+
+again.addEventListener('click', function () {
+  score = 20;
+  secretNumber = Math.floor(Math.random() * 20) + 1;
+  displayMessage('Start guessing...');
+  displayScore(score);
+  mysteryNumber.textContent = '?';
+  guessNumber.value = '';
+  body.style.backgroundColor = '#fff';
+  mysteryNumber.style.width = '15rem';
 });
