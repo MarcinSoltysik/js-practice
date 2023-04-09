@@ -16,6 +16,7 @@ const body = document.querySelector('body');
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
+console.log(secretNumber);
 
 const displayMessage = function (notice) {
   message.textContent = notice;
@@ -28,7 +29,7 @@ checkNumber.addEventListener('click', function () {
   const guess = Number(guessNumber.value);
 
   if (!guess) {
-    displayMessage('🫤 No number! Enter a Number');
+    displayMessage('🫤 No number!');
   } else if (guess === secretNumber) {
     displayMessage('🥳 Correct Number! You WIN');
     mysteryNumber.textContent = secretNumber;
