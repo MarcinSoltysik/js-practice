@@ -30,7 +30,7 @@ checkNumber.addEventListener('click', function () {
   if (!guess) {
     displayMessage('🫤 No number! Enter a Number');
   } else if (guess === secretNumber) {
-    displayMessage('😀 Correct Number! You WIN 🥳');
+    displayMessage('🥳 Correct Number! You WIN');
     mysteryNumber.textContent = secretNumber;
     body.style.backgroundColor = '#60b347';
     mysteryNumber.style.width = '30rem';
@@ -57,6 +57,6 @@ again.addEventListener('click', function () {
   displayScore(score);
   mysteryNumber.textContent = '?';
   guessNumber.value = '';
-  body.style.backgroundColor = '#fff';
+  body.style.backgroundColor = '#222';
   mysteryNumber.style.width = '15rem';
 });
