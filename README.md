@@ -21,6 +21,8 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 
 https://user-images.githubusercontent.com/78354700/230790898-d45ca2b6-44a7-449d-9f60-bc24273493d7.mov
 
+## description
+
 This is a simple number-guessing game built with JavaScript.
 The user has to guess a random number between 1 and 20, 
 and the game provides feedback on whether the guess was too high or too low. 
@@ -32,6 +34,7 @@ I learned how the Math.random function works, how to use the addEventListener() 
 I also learned how to control DOM elements by getting data from the user and how to style elements using JavaScript.
 
 ### Technologies:
+
 - html
 - css
 - JS
