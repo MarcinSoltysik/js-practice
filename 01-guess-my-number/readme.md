@@ -2,6 +2,11 @@
 
 ## Game project
 
+![Zrzut ekranu 2023-04-9 o 20 37 25](https://user-images.githubusercontent.com/78354700/230791525-a54b1b5e-040f-4a2f-af71-7af6a5f8464b.png)
+
+
+## Description
+
 This is a simple number-guessing game built with JavaScript.
 The user has to guess a random number between 1 and 20, and the game provides feedback on whether the guess was too high or too low. If the user guesses correctly, they win the game.
 
