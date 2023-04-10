@@ -2,8 +2,7 @@
 
 ## Game project
 
-![Zrzut ekranu 2023-04-9 o 20 37 25](https://user-images.githubusercontent.com/78354700/230791525-a54b1b5e-040f-4a2f-af71-7af6a5f8464b.png)
-
+![image0](https://user-images.githubusercontent.com/78354700/230849048-e1530f26-f24e-4cac-abf4-d186c7bbbc99.gif)
 
 ## Description
 
