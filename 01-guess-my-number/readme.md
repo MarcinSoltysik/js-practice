@@ -2,8 +2,7 @@
 
 ## Game project
 
-![image0](https://user-images.githubusercontent.com/78354700/230849112-669f0844-57df-4042-8160-195ed24dcd3c.gif)
-
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/78354700/230904466-1b42997a-90a7-4886-851f-b0d69c20788c.gif)
 
 ## Description
 
