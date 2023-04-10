@@ -19,7 +19,8 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 
 1. [Guess My Number](https://github.com/MarcinSoltysik/practice-js/tree/main/01-guess-my-number) 
 
-https://user-images.githubusercontent.com/78354700/230790898-d45ca2b6-44a7-449d-9f60-bc24273493d7.mov
+![image0](https://user-images.githubusercontent.com/78354700/230848941-d6871d1b-e850-441f-ad23-c2041d3d8cbe.gif)
+
 
 ## Description
 
