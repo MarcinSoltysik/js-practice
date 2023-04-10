@@ -16,7 +16,6 @@ const body = document.querySelector('body');
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
-console.log(secretNumber);
 
 const displayMessage = function (notice) {
   message.textContent = notice;
@@ -42,7 +41,7 @@ checkNumber.addEventListener('click', function () {
     }
   } else if (guess !== secretNumber)
     if (score > 1) {
-      displayMessage(guess > secretNumber ? '⬆️ Too hight!' : '⬇️ Too low!');
+      displayMessage(guess > secretNumber ? '⬆️ Too high!' : '⬇️ Too low!');
       score--;
       displayScore(score);
     } else {
