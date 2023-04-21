@@ -37,3 +37,14 @@ ul {
   list-style: none;
   text-align: left;
 }
+
+ul li {
+  background-color: #333;
+  margin-top: 2px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+ul li span {
+  color: #777;
+}
