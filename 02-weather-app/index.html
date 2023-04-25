@@ -16,11 +16,36 @@
   </head>
 
   <body>
-    <form action="">
+    <form action="" style="display: none">
       <input type="text" placeholder="Search city..." class="input">
       <ul class="input--list">
       </ul>
     </form>
+
+    <main id="weather">
+
+      <img src="" alt="" id="icon">
+      <h1 id="degrees">20 &#8451;</h1>
+      <h2 id="city">Berlin</h2>
+      <button id="btn-change">change city</button>
+
+      <section class="info">
+        <h3>Wind</h3>
+        <p class="value">2 <span>km/h</span> </p>
+      </section>
+
+      <section class="info">
+        <h3>Wind</h3>
+        <p class="value">2 <span>km/h</span> </p>
+      </section>
+
+      <section class="info">
+        <h3>Wind</h3>
+        <p class="value">2 <span>km/h</span> </p>
+      </section>
+    </main>
+
+
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script src="weather.js"></script>
   </body>
