@@ -25,7 +25,7 @@
       </form>
     </section>
 
-    <main id="weather" style="display: none">
+    <main id="weather">
       <img src="" alt="" id="icon" />
       <h1 id="degrees">20 &#8451;</h1>
       <h2 id="city">Berlin</h2>
@@ -33,19 +33,29 @@
 
       <section class="weather-info">
         <section class="info">
-          <h3 class="weather-info-title">Wind</h3>
-          <p class="value">2 <span class="weather-info-span">km/h</span></p>
+          <h3 class="weather-info-title">wind</h3>
+          <p class="value" id="wind">
+            2 <span class="weather-info-span">km/h</span>
+          </p>
         </section>
 
         <section class="info">
-          <h3 class="weather-info-title">Wind</h3>
-          <p class="value">2 <span class="weather-info-span">km/h</span></p>
+          <h3 class="weather-info-title">feels Like</h3>
+          <p class="value" id="feelsLike">
+            2 <span class="weather-info-span">km/h</span>
+          </p>
         </section>
 
         <section class="info">
-          <h3 class="weather-info-title">Wind</h3>
-          <p class="value">2 <span class="weather-info-span">km/h</span></p>
+          <h3 class="weather-info-title">humidity</h3>
+          <p class="value" id="humidity">
+            2 <span class="weather-info-span">km/h</span>
+          </p>
         </section>
+      </section>
+      <section class="info-title">
+        <h4>description</h4>
+        <div id="description" class="info-description"></div>
       </section>
     </main>
 

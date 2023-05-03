@@ -17,6 +17,9 @@ form,
   margin: 50px auto;
   text-align: center;
 }
+#weather {
+  max-width: 500px;
+}
 
 input[type="text"] {
   display: block;
@@ -77,6 +80,7 @@ ul li span {
   padding: 25px;
   border-radius: 5px;
   text-align: center;
+  gap: 25px;
 }
 
 .weather-info-title {
@@ -92,4 +96,16 @@ ul li span {
 
 .value {
   font-size: 1.2rem;
+}
+
+.info-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  letter-spacing: 8px;
+}
+
+.info-description {
+  padding: 15px;
+  font-size: 0.8rem;
 }

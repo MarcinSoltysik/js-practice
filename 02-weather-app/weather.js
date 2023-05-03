@@ -34,16 +34,25 @@ async function showWeather(lat, lon, name) {
     `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`
   );
   const data = await response.json();
-  console.log(data);
-  console.log(data.name, data.main.temp);
+  // console.log(data);
+  // console.log(data.name, data.main.temp);
 
-  const temp = data.main.temp;
+  const temp = data.main.temp.toFixed(1);
   const feelsLike = data.main.feels_like;
   const humidity = data.main.humidity;
   const wind = data.wind.speed;
   const icon = data.weather[0].icon;
   const description = data.weather[0].description;
   console.log(temp, feelsLike, humidity, wind, icon, description);
+  document.getElementById("degrees").innerHTML = temp + " &#8451;";
+  document.getElementById("city").innerHTML = name;
+  document.getElementById("wind").innerHTML = wind + " km/h";
+  document.getElementById("feelsLike").innerHTML = feelsLike + " &#8451;";
+  document.getElementById("humidity").innerHTML = humidity + " %";
+  document.getElementById("description").textContent = description;
+  document.getElementById(
+    "icon"
+  ).src = ` https://openweathermap.org/img/wn/${icon}@4x.png`;
 }
 
 document.body.addEventListener("click", function (ev) {
