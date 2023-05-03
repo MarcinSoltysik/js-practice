@@ -54,8 +54,6 @@ async function showWeather(lat, lon, name) {
 }
 
 document.body.addEventListener("click", function (ev) {
-  console.log(ev);
-
   const li = ev.target;
   const { lat, lon, name } = li.dataset;
   localStorage.setItem("lat", lat);
