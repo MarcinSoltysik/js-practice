@@ -4,12 +4,13 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #110;
   color: #fff;
 }
 
-form {
+form,
+#weather {
   display: block;
   width: 100%;
   max-width: 300px;
@@ -17,7 +18,7 @@ form {
   text-align: center;
 }
 
-input[type='text'] {
+input[type="text"] {
   display: block;
   width: 100%;
   background: transparent;
@@ -29,7 +30,7 @@ input[type='text'] {
   padding: 5px 0;
 }
 
-input[type='text']:focus {
+input[type="text"]:focus {
   border-color: #ff521f;
 }
 
@@ -47,4 +48,48 @@ ul li {
 
 ul li span {
   color: #777;
+}
+
+#degrees {
+  font-size: 3rem;
+}
+#city {
+  color: #ff521f;
+  font-size: 2.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#btn-change {
+  border: 2px solid #888;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 35px;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  outline: 1px solid #fff;
+  padding: 25px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.weather-info-title {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2.5px;
+}
+
+.weather-info-span {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.value {
+  font-size: 1.2rem;
 }
