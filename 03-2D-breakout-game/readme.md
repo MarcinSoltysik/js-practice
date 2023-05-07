@@ -64,8 +64,8 @@ Next update the draw() function to use the x and y variables in the arc() method
 
 Now comes the important part: we want to add a small value to x and y after every frame has been drawn to make it appear that the ball is moving. Let's define these small values as dx and dy and set their values to 2 and -2 respectively. Add the following below your x and y variable definitions:
 
-let dx = 2;
-let dy = -2;
+let dx = 2; // 1 number - spedd
+let dy = -2; // 0
 
 The last thing to do is to update x and y with our dx and dy variable on every frame, so the ball will be painted in the new position on every update. Add the following two new lines indicated below to your draw() function:
 
@@ -82,3 +82,19 @@ x += dx;
 y += dy;
 }
 setInterval(draw, 10);
+
+3. Bounce off the walls
+
+There are four walls to bounce the ball off — let's focus on the top one first. We need to check, on every frame, whether the ball is touching the top edge of the Canvas — if yes, we'll reverse the ball movement so it will start to move in the opposite direction and stay within the visible boundaries. Remembering that the coordinate system starts from the top left, we can come up with something like this:
+
+if (y + dy < 0) {
+dy = -dy;
+}
+
+if (x + dx > canvas.width || x + dx < 0) {
+dx = -dx;
+}
+
+if (y + dy > canvas.height || y + dy < 0) {
+dy = -dy;
+}
