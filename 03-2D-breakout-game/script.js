@@ -3,12 +3,11 @@
 const canvas = document.getElementById('myIdCanvas');
 const ctx = canvas.getContext('2d');
 
+const ballRadius = 10;
 let x = canvas.width / 2;
 let y = canvas.height - 30;
-let dx = 1;
-let dy = -1;
-
-const ballRadius = 10;
+let dx = 2;
+let dy = -2;
 
 function drawBall() {
   ctx.beginPath();
@@ -23,11 +22,18 @@ function draw() {
   drawBall();
   x += dx;
   y += dy;
-  if (x + dx > canvas.width || x + dx < 0) {
+  // if (x + dx > canvas.width || x + dx < 0) {
+  //   dx = -dx;
+  // }
+
+  // if (y + dy > canvas.height || y + dy < 0) {
+  //   dy = -dy;
+  // }
+
+  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
     dx = -dx;
   }
-
-  if (y + dy > canvas.height || y + dy < 0) {
+  if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
     dy = -dy;
   }
 }
