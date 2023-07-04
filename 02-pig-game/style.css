@@ -120,3 +120,8 @@ main {
 .btn--hold {
   top: 46.1rem;
 }
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
