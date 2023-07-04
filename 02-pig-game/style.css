@@ -67,3 +67,14 @@ main {
   text-align: center;
   transition: all 0.75s;
 }
+
+.player__current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.player__current-score {
+  font-size: 3.5rem;
+}
