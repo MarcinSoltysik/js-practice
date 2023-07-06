@@ -11,9 +11,7 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-let playing = true;
-let currentScore;
-let activePlayer;
+let scores, currentScore, activePlayer, playing;
 
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
