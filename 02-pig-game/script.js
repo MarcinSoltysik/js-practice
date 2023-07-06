@@ -10,4 +10,28 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
-console.log(diceEl, btnNew, btnRoll, btnHold);
+
+let playing = true;
+let currentScore;
+let activePlayer;
+
+// Rolling dice
+
+btnRoll.addEventListener('click', function () {
+  if (playing) {
+    // generating a random dice roll
+    const dice = Math.trunc(Math.random() * 6 + 1);
+    // display dice
+    diceEl.src = `img/dice-${dice}.png`;
+    // check for rolled 1
+    if (dice !== 1) {
+      // add dice to current score
+      currentScore = currentScore + dice;
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
+    } else {
+      // switch next player
+      switchPlayer();
+    }
+  }
+});
