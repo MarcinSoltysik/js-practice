@@ -48,6 +48,7 @@ btnRoll.addEventListener('click', function () {
     // generating a random dice roll
     const dice = Math.trunc(Math.random() * 6 + 1);
     // display dice
+    diceEl.classList.remove('hidden');
     diceEl.src = `img/dice-${dice}.png`;
     // check for rolled 1
     if (dice !== 1) {
@@ -61,3 +62,5 @@ btnRoll.addEventListener('click', function () {
     }
   }
 });
+
+btnNew.addEventListener('click', init);
