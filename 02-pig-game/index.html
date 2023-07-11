@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PIG Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0">
+        <h2 class="player__name" id="name--0">Player 1</h2>
+        <p class="player__score" id="score--0">10</p>
+        <div class="player__current">
+          <p class="player__current-label">Current</p>
+          <p class="player__current-score" id="current--0">1</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="player__name" id="name--1">Player 2</h2>
+        <p class="player__score" id="score--1">20</p>
+        <div class="player__current">
+          <p class="player__current-label">Current</p>
+          <p class="player__current-score" id="current--1">2</p>
+        </div>
+      </section>
+      <img src="img/dice-1.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New Game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">⏹ Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
