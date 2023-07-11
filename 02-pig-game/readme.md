@@ -8,13 +8,13 @@ The goal is to reach a target score to win the game.
 
 
 ## How to Play
-Each player takes turns rolling the dice by clicking the "Roll dice" button. 
-The dice roll is simulated by generating a random number between 1 and 6. 
-If a player rolls a 1, their current score is reset to zero, and it becomes the other player's turn. 
-If a player rolls any other number, it gets added to their current score. 
-To save the current score and add it to the player's total score, the player can click the "Hold" button. 
-The first player to reach or exceed the target score wins the game. 
-Clicking the "New Game" button resets the game and starts a new round.
+- Each player takes turns rolling the dice by clicking the "Roll dice" button.
+- The dice roll is simulated by generating a random number between 1 and 6.
+- If a player rolls a 1, their current score is reset to zero, and it becomes the other player's turn. 
+- If a player rolls any other number, it gets added to their current score. 
+- To save the current score and add it to the player's total score, the player can click the "Hold" button. 
+- The first player to reach or exceed the target score wins the game. 
+- Clicking the "New Game" button resets the game and starts a new round.
 
 
 ### What I Learned
