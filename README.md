@@ -72,9 +72,12 @@ The game showcases the interaction between HTML, CSS, and JavaScript to create a
 
 
 ### Technologies Used
-HTML: The structure and layout of the game are defined using HTML.
-CSS: The game's visual styling and presentation are created using CSS.
-JavaScript: The game's logic and interactivity are implemented using JavaScript.
-Feel free to clone and modify the code to create your own version of the Pig Game! Enjoy playing and learning!
+- HTML: The structure and layout of the game are defined using HTML.
+- CSS: The game's visual styling and presentation are created using CSS.
+- JavaScript: The game's logic and interactivity are implemented using JavaScript.
+
+#### Enjoy playing and learning!
+Feel free to clone and modify the code to create your own version of the Pig Game! 
+
 
 
