@@ -17,6 +17,17 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 
 ## My projects
 
+| No | Description |
+| --- | --- |
+| 1| [Guess My Number](https://github.com/MarcinSoltysik/practice-js/tree/main/01-guess-my-number) |
+| 2| [Pig Game](https://github.com/MarcinSoltysik/practice-js/tree/main/02-pig-game)|
+| 3| [modal-window](https://github.com/MarcinSoltysik/practice-js/tree/main/03-modal-window)|
+
+
+
+
+<hr>
+
 1. [Guess My Number](https://github.com/MarcinSoltysik/practice-js/tree/main/01-guess-my-number) 
 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/78354700/230904368-2a345623-6f34-49bb-afba-4e40b7c071d7.gif)
