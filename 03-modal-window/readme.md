@@ -4,7 +4,6 @@
 
 
 ## Description
-<hr>
 
 A modal window in JavaScript (also known as a modal dialog or a modal popup) is a user interface element that appears on top of the main content and requires the user to interact with it before they can continue interacting with the rest of the page. It is commonly used to display important information, prompt for user input, or confirm an action.
 
