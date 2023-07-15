@@ -59,3 +59,14 @@ li:last-child {
   border-radius: 10rem;
   cursor: pointer;
 }
+
+.btn__close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
