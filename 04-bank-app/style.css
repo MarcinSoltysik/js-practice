@@ -64,3 +64,13 @@ nav {
   cursor: pointer;
   transition: all 0.3s;
 }
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+
+/* MAIN */
