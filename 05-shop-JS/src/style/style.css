@@ -1,0 +1,25 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.card-table {
+  width: 70%;
+  text-align: center;
+}
+
+.card-table th,
+.card-table td {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+}
+
+.card-table th {
+  background-color: #efe9e9;
+}
