@@ -28,10 +28,13 @@
         </table>
       </div>
     </div>
-
-    <p class="discount hidden container" id="discount">
-      Zniżka: <b><span id="discount-amount">0</span></b> zł
-    </p>
+    <div class="container">
+      <input type="checkbox" id="add-discount" onclick="addDiscount()" />
+      <label for="add-discount">Zastosuj zniżkę</label>
+      <p class="discount hidden" id="discount">
+        Zniżka: <b><span id="discount-amount">0</span></b> zł
+      </p>
+    </div>
 
     <script src="src/js/app.js"></script>
   </body>

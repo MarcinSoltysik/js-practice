@@ -33,18 +33,24 @@ const totalWithDiscount = total - discount;
 
 document.querySelector('#total-price').innerHTML = totalWithDiscount;
 
-// dodanie zniżki, wyświetlanie / ukrywanie
+// dodawnia znizki przy checkobx,
 
-const discountContainer = document.querySelector('#discount-amount');
-discountContainer.innerHTML = -discount;
-
-// if (discount === 0) {
-//   document.querySelector('#discount').style.display = 'none';
-// }
-
-if (discount > 0) {
-  document.querySelector('#discount').classList.remove('hidden');
+function addDiscount() {
+  if (discount > 0) {
+    document.querySelector('#discount-amount').innerHTML = -discount;
+    document.querySelector('#discount').classList.toggle('hidden');
+  }
 }
+
+// zniżka, wyświetlanie / ukrywanie
+
+// const discountContainer = document.querySelector('#discount-amount');
+// discountContainer.innerHTML = -discount;
+
+// if (discount > 0) {
+//   document.querySelector('#discount-amount').innerHTML = -discount;
+//   document.querySelector('#discount').classList.remove('hidden');
+// }
 
 /////////////////////////////
 /// test log
