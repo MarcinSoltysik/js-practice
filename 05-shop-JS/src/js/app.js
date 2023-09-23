@@ -16,14 +16,12 @@ let counter = 1;
 function addItem(item) {
   itemsTableContainer.innerHTML += `
 <tr>
-<td>${counter}</td>
+<td>${counter++}</td>
 <td>${item.name}</td>
 <td>1</td>
 <td>${item.price}</td>
 </tr>
 `;
-  // counter = counter + 1;
-  counter += 1;
 }
 
 addItem(product1);
@@ -33,9 +31,26 @@ addItem(product2);
 const total = Number(product1.price) + Number(product2.price);
 const totalWithDiscount = total - discount;
 
-document.querySelector('#total-price').innerHTML = total;
+document.querySelector('#total-price').innerHTML = totalWithDiscount;
 
+// dodanie zniżki, wyświetlanie / ukrywanie
+
+const discountContainer = document.querySelector('#discount-amount');
+discountContainer.innerHTML = -discount;
+
+// if (discount === 0) {
+//   document.querySelector('#discount').style.display = 'none';
+// }
+
+if (discount > 0) {
+  document.querySelector('#discount').classList.remove('hidden');
+}
+
+/////////////////////////////
+/// test log
+///
 //  TEST console.log
+///
 console.log(total);
 console.log(totalWithDiscount);
 
@@ -50,13 +65,3 @@ console.log(typeof Number('20'));
 
 //  TEST console.log
 console.log(document.querySelector('#total-price'));
-
-{
-  /* 
-
-<tr>
-<td>Marynarka</td>
-<td>1</td>
-<td>500</td>
-</tr> */
-}
