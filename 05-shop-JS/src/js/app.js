@@ -1,8 +1,8 @@
 'use strict';
 
 // test
-const product1 = { price: 10 };
-const product2 = { price: '20' };
+const product1 = { name: 'koszula', price: 10 };
+const product2 = { name: 'marynarka', price: '20' };
 const discount = 10;
 
 if (typeof product2.price === 'string') {
@@ -13,14 +13,14 @@ if (typeof product2.price === 'string') {
 const itemsTableContainer = document.querySelector('#items');
 itemsTableContainer.innerHTML += `
 <tr>
-<td>Koszula</td>
+<td>${product1.name}</td>
 <td>1</td>
 <td>${product1.price}</td>
 </tr>
 `;
 itemsTableContainer.innerHTML += `
 <tr>
-<td>Spodnie</td>
+<td>${product2.name}</td>
 <td>1</td>
 <td>${product2.price}</td>
 </tr>
