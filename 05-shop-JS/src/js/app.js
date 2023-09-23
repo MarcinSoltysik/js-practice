@@ -11,15 +11,19 @@ if (typeof product2.price === 'string') {
 // dodawanie produktów do koszyka
 
 const itemsTableContainer = document.querySelector('#items');
+let counter = 1;
 
 function addItem(item) {
   itemsTableContainer.innerHTML += `
 <tr>
+<td>${counter}</td>
 <td>${item.name}</td>
 <td>1</td>
 <td>${item.price}</td>
 </tr>
 `;
+  // counter = counter + 1;
+  counter += 1;
 }
 
 addItem(product1);
