@@ -11,20 +11,19 @@ if (typeof product2.price === 'string') {
 // dodawanie produktów do koszyka
 
 const itemsTableContainer = document.querySelector('#items');
-itemsTableContainer.innerHTML += `
+
+function addItem(item) {
+  itemsTableContainer.innerHTML += `
 <tr>
-<td>${product1.name}</td>
+<td>${item.name}</td>
 <td>1</td>
-<td>${product1.price}</td>
+<td>${item.price}</td>
 </tr>
 `;
-itemsTableContainer.innerHTML += `
-<tr>
-<td>${product2.name}</td>
-<td>1</td>
-<td>${product2.price}</td>
-</tr>
-`;
+}
+
+addItem(product1);
+addItem(product2);
 
 // cena całkowita
 const total = Number(product1.price) + Number(product2.price);
