@@ -36,6 +36,10 @@ body {
   padding: 5px;
 }
 
+.card-table td input {
+  width: 30px;
+}
+
 .card-table th {
   background-color: #efe9e9;
 }
