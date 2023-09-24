@@ -28,7 +28,9 @@ addItem(product1);
 addItem(product2);
 
 function markBg() {
-  window.event.target.closest('tr').classList.toggle('marked');
+  if (window.event.target.tagName === 'TD') {
+    window.event.target.closest('tr').classList.toggle('marked');
+  }
 }
 
 // cena całkowita
