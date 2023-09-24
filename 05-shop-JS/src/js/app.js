@@ -2,21 +2,18 @@
 
 // test
 const product1 = { name: 'koszula', price: 10 };
-const product2 = { name: 'marynarka', price: '20' };
+const product2 = { name: 'marynarka', price: 20 };
 const discount = 10;
 let discountEnable = false;
 
-if (typeof product2.price === 'string') {
-  console.log('Błędny typ danych');
-}
 // dodawanie produktów do koszyka
 
 const itemsTableContainer = document.querySelector('#items');
 let counter = 1;
 
 function addItem(item) {
-  itemsTableContainer.innerHTML += `
-<tr>
+  itemsTableContainer.innerHTML += `<tr onmouseover="markBg()" onmouseout="unMarkBg()">
+
 <td>${counter++}</td>
 <td>${item.name}</td>
 <td>1</td>
@@ -27,6 +24,13 @@ function addItem(item) {
 
 addItem(product1);
 addItem(product2);
+
+function markBg() {
+  window.event.target.closest('tr').classList.add('marked');
+}
+function unMarkBg() {
+  window.event.target.closest('tr').classList.remove('marked');
+}
 
 // cena całkowita
 
