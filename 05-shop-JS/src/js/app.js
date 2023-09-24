@@ -17,7 +17,7 @@ function addItem(item) {
 <td>${counter++}</td>
 <td>${item.name}</td>
 <td> 
-<input type="number" value='1'>
+<input type="number" value='1' class='quantity'>
 </td>
 <td>${item.price}</td>
 <td> <button class='btn-delete'>X</button> </td>
@@ -68,10 +68,23 @@ function removeRow(e) {
   row.remove();
 }
 
+function removeRowQuantity(e) {
+  if (Number(e.target.value) === 0) {
+    const row = e.target.closest('tr');
+    row.remove();
+  }
+}
+
 const deleteButtons = document.querySelectorAll('.btn-delete');
 
 for (let i = 0; i < deleteButtons.length; i++) {
   deleteButtons[i].addEventListener('click', removeRow);
+}
+
+const quantityInputs = document.querySelectorAll('.quantity');
+
+for (let i = 0; i < quantityInputs.length; i++) {
+  quantityInputs[i].addEventListener('change', removeRowQuantity);
 }
 
 // addEventListener
