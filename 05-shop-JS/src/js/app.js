@@ -12,7 +12,7 @@ const itemsTableContainer = document.querySelector('#items');
 let counter = 1;
 
 function addItem(item) {
-  itemsTableContainer.innerHTML += `<tr onClick="markBg()">
+  itemsTableContainer.innerHTML += `<tr>
 
 <td>${counter++}</td>
 <td>${item.name}</td>
@@ -27,11 +27,12 @@ function addItem(item) {
 addItem(product1);
 addItem(product2);
 
-function markBg() {
-  if (window.event.target.tagName === 'TD') {
-    window.event.target.closest('tr').classList.toggle('marked');
+function markBg(e) {
+  if (e.target.tagName === 'TD') {
+    e.target.closest('tr').classList.toggle('marked');
   }
 }
+itemsTableContainer.addEventListener('click', markBg);
 
 // cena całkowita
 
