@@ -20,6 +20,7 @@ function addItem(item) {
 <input type="number" value='1'>
 </td>
 <td>${item.price}</td>
+<td> <button class='btn-delete'>X</button> </td>
 </tr>
 `;
 }
@@ -27,12 +28,13 @@ function addItem(item) {
 addItem(product1);
 addItem(product2);
 
+// zmiana tła
+
 function markBg(e) {
   if (e.target.tagName === 'TD') {
     e.target.closest('tr').classList.toggle('marked');
   }
 }
-itemsTableContainer.addEventListener('click', markBg);
 
 // cena całkowita
 
@@ -59,6 +61,21 @@ function addDiscount(e) {
   calculatePrice();
 }
 
-document.querySelector('#add-discount').addEventListener('click', addDiscount);
+// usuwanie produktu z koszyka
 
+function removeRow(e) {
+  const row = e.target.closest('tr');
+  row.remove();
+}
+
+const deleteButtons = document.querySelectorAll('.btn-delete');
+
+for (let i = 0; i < deleteButtons.length; i++) {
+  deleteButtons[i].addEventListener('click', removeRow);
+}
+
+// addEventListener
+
+document.querySelector('#add-discount').addEventListener('click', addDiscount);
+itemsTableContainer.addEventListener('click', markBg);
 calculatePrice();
