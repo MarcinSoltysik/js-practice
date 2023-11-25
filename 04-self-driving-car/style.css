@@ -9,7 +9,7 @@ body {
     #111f38,
     #0b1425
   );
-  /* overflow: hidden; */
+  overflow: hidden;
   text-align: center;
 }
 
@@ -23,4 +23,5 @@ h2 {
 }
 
 /* info 
-overflow: hidden; */
+overflow: hidden; 
+background-image: linear-gradient*/
