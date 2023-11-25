@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #2b4175,
+    #213560,
+    #192a4b,
+    #111f38,
+    #0b1425
+  );
+  /* overflow: hidden; */
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #42e2fe;
+  text-transform: uppercase;
+}
+#myCanvas {
+  background: #ffffff;
+}
+
+/* info 
+overflow: hidden; */
