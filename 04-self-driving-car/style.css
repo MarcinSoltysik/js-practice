@@ -13,13 +13,12 @@ body {
   text-align: center;
 }
 
-h1,
-h2 {
+h1 {
   color: #42e2fe;
   text-transform: uppercase;
 }
 #myCanvas {
-  background: #ffffff;
+  background: #a7a2a2;
 }
 
 /* info 
