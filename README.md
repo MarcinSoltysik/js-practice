@@ -24,6 +24,11 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 | 3| [modal-window](https://github.com/MarcinSoltysik/practice-js/tree/main/03-modal-window)|
 
 
+### All projects have their own readme files that they contain: 
+- Description
+- Technical details
+- Summary
+
 
 
 <hr>
