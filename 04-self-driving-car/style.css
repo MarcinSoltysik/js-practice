@@ -18,7 +18,8 @@ h1 {
   text-transform: uppercase;
 }
 #networkCanvas {
-  background: #a7a2a2;
+  margin-left: 25px;
+  background: #53596e;
 }
 #carCanvas {
   background: #a7a2a2;
