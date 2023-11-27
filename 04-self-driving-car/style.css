@@ -10,14 +10,17 @@ body {
     #0b1425
   );
   overflow: hidden;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 h1 {
   color: #42e2fe;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #verticalButtons {
@@ -29,7 +32,7 @@ button {
   border: none;
   border-radius: 5px;
   padding: 5px 5px 7px 5px;
-  margin: 2px;
+  margin: 5px;
   cursor: pointer;
 }
 button:hover {
@@ -46,4 +49,3 @@ button:hover {
 /* info 
 overflow: hidden; 
 background-image: linear-gradient*/
-/* <h1>Self-Driving Car with JavaScript</h1> */
