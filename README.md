@@ -54,8 +54,9 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 ![ezgif com-video-to-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/32c92773-ec61-4985-9b9a-c08599056d50)
 
 <hr>
-# self-driving-car
-4.[self-driving-car](https://github.com/MarcinSoltysik/practice-js/tree/main/04-self-driving-car)
+# Self-Driving-Car
+
+4. [self-driving-car](https://github.com/MarcinSoltysik/practice-js/tree/main/04-self-driving-car)
 
 ![ezgif com-video-to-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/f21c0264-8971-43e3-8ab8-b41ce2d25998)
 
