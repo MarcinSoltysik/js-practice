@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right top,
+    #2b4175,
+    #213560,
+    #192a4b,
+    #111f38,
+    #0b1425
+  );
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #42e2fe;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#verticalButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 7px 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00c0ff;
+}
+
+#networkCanvas {
+  background: #53596e;
+}
+#carCanvas {
+  background: #a7a2a2;
+}
+
+/* info 
+overflow: hidden; 
+background-image: linear-gradient*/
