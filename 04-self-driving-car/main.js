@@ -10,10 +10,10 @@ animate();
 
 function animate() {
   for (let i = 0; i < traffic.length; i++) {
-    traffic[i].update(road.borders);
+    traffic[i].update(road.borders, []);
   }
 
-  car.update(road.borders);
+  car.update(road.borders, traffic);
   canvas.height = 650;
   // canvas.height = window.innerHeight;
 
@@ -21,10 +21,10 @@ function animate() {
   ctx.translate(0, -car.y + canvas.height * 0.8);
   road.draw(ctx);
   for (let i = 0; i < traffic.length; i++) {
-    traffic[i].draw(ctx);
+    traffic[i].draw(ctx, '#FF9671');
   }
 
-  car.draw(ctx);
+  car.draw(ctx, '#0081CF');
   ctx.restore();
   requestAnimationFrame(animate);
 }
