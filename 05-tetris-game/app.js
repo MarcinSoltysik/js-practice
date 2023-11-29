@@ -40,4 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     [1, width + 1, width * 2 + 1, width * 3 + 1],
     [width, width + 1, width + 2, width + 3],
   ];
+
+  const theTetrominoes = [
+    lTetromino,
+    zTetromino,
+    tTetromino,
+    oTetromino,
+    iTetromino,
+  ];
+
+  let currentPosition = 4;
+  let current = theTetrominoes[0][0];
+  //
+  console.log(current);
+  //
+
+  function draw() {
+    current.forEach((index) => {
+      squares[currentPosition + index].classList.add('tetromino');
+    });
+  }
+  draw();
 });
