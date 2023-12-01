@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   let currentPosition = 4;
-  let current = theTetrominoes[0][0];
-  //
+  let random = Math.floor(Math.random() * tTetromino.length);
+  console.log(random);
+  let current = theTetrominoes[random][random];
   console.log(current);
-  //
 
   function draw() {
     current.forEach((index) => {
