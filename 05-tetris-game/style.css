@@ -23,6 +23,7 @@
   width: 80px;
   height: 80px;
   display: flex;
+  flex-wrap: wrap;
   background-color: bisque;
 }
 
