@@ -18,3 +18,24 @@
 .taken {
   border-bottom: 1px solid red;
 }
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  background-color: bisque;
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+#start-button {
+  margin-bottom: 10px;
+}
