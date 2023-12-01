@@ -98,6 +98,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // assign fx to keyCodes
+
+  function control(e) {
+    if (e.keyCode === 37) {
+      moveLeft();
+    } else if (e.keyCode === 38) {
+      // rotate
+    } else if (e.keyCode === 39) {
+      moveRight();
+    } else if (e.keyCode === 40) {
+      moveDown();
+    }
+  }
+
+  document.addEventListener('keyup', control);
+
   // move left
 
   function moveLeft() {
@@ -113,6 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
       )
     ) {
       currentPosition += 1;
+    }
+    draw();
+  }
+
+  function moveRight() {
+    undraw();
+    const isAtRightEdge = current.some(
+      (index) => (currentPosition + index + 1) % width === 0
+    );
+    if (!isAtRightEdge) currentPosition += 1;
+
+    if (
+      current.some((index) =>
+        squares[currentPosition + index].classList.contains('taken')
+      )
+    ) {
+      currentPosition -= 1;
     }
     draw();
   }
