@@ -1,5 +1,8 @@
 # Tetris
 
+![tetris-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/82a7dd93-c207-42ab-be92-daedae8af18f)
+
+
 ## Description
 
 This JavaScript code creates a Tetris game within a web browser, utilizing the DOM for grid representation and defining various tetromino shapes. The game includes functions for rendering, movement, and rotation of tetrominoes, with keyboard controls for player interaction. The objective is to accumulate points by completing rows and the game ends if a tetromino reaches the top of the grid.
