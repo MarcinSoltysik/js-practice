@@ -23,6 +23,7 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 | 2| [Pig Game](https://github.com/MarcinSoltysik/practice-js/tree/main/02-pig-game)|
 | 3| [modal-window](https://github.com/MarcinSoltysik/practice-js/tree/main/03-modal-window)|
 | 4| [self-driving-car](https://github.com/MarcinSoltysik/practice-js/tree/main/04-self-driving-car)|
+| 5| [tetris-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/05-tetris-game)|
 
 
 ### All projects have their own Readme file which contains:
@@ -59,6 +60,13 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 4. [self-driving-car](https://github.com/MarcinSoltysik/practice-js/tree/main/04-self-driving-car)
 
 ![ezgif com-video-to-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/f21c0264-8971-43e3-8ab8-b41ce2d25998)
+
+<hr>
+# tetris-game
+
+5. [tetris-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/05-tetris-game)|
+
+![tetris-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/43060159-8256-48fc-852d-715272e7adca)
 
 
 
