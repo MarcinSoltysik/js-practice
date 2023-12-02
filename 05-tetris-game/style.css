@@ -15,10 +15,6 @@
   background-color: blue;
 }
 
-.taken {
-  border-bottom: 1px solid red;
-}
-
 .mini-grid {
   width: 80px;
   height: 80px;
