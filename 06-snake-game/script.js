@@ -86,7 +86,7 @@ function move() {
 }
 
 // test draw
-draw();
+// draw();
 
 // test moving
 // setInterval(() => {
@@ -101,7 +101,34 @@ function startGame() {
   logo.style.display = "none";
   gameInterval = setInterval(() => {
     move();
-    checkCollision();
+    // checkCollision();
     draw();
   }, gameSpeedDelay);
 }
+
+// keypress
+function handleKeyPress(event) {
+  if (
+    (!gameStarted && event.code === "Space") ||
+    (!gameStarted && event.key === "")
+  ) {
+    startGame();
+  } else {
+    switch (event.key) {
+      case "ArrowUp":
+        direction = "up";
+        break;
+      case "ArrowDown":
+        direction = "down";
+        break;
+      case "ArrowLeft":
+        direction = "left";
+        break;
+      case "ArrowRight":
+        direction = "right";
+        break;
+    }
+  }
+}
+
+document.addEventListener("keydown", handleKeyPress);
