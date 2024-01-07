@@ -26,7 +26,6 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 | 5| [tetris-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/05-tetris-game)|
 | 6| [snake-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game)|
 
-https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game
 
 
 ### All projects have their own Readme file which contains:
@@ -75,9 +74,10 @@ https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game
 
 # snake-game
 
-6. [snake-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game)|
+6. [snake-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game)
 
-![Nagraniezekranu2024-01-7o22 03 06-ezgif com-video-to-gif-converter](https://github.com/MarcinSoltysik/practice-js/assets/78354700/8e283613-c225-4ad6-bc8b-55b805e4ffd8)
+![snake-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/d61dbe7c-2497-4683-8847-8718857c3c09)
+
 
 
 
