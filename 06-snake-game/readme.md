@@ -1,5 +1,8 @@
 # Snake
 
+![snake-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/e4c60fcd-71a6-40ad-89db-276260901899)
+
+
 ## Description
 
 This project is a simple browser-based Snake game implemented using HTML, CSS, and JavaScript. The game features a grid-based game board where the player controls a snake, attempting to eat food to grow longer while avoiding collisions with the boundaries and itself. The user interacts with the game through keyboard inputs, navigating the snake in four directions. The game displays the current score, high score, and provides instructions for starting and restarting the game.
