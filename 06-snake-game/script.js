@@ -75,7 +75,8 @@ function move() {
   // snake.pop();
   if (head.x === food.x && head.y === food.y) {
     food = generateFood();
-    clearInterval();
+    increaseSpeed();
+    clearInterval(gameInterval);
     gameInterval = setInterval(() => {
       move();
       draw();
@@ -132,3 +133,5 @@ function handleKeyPress(event) {
 }
 
 document.addEventListener("keydown", handleKeyPress);
+
+// function increaseSpeed() {}
