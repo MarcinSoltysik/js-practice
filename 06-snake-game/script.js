@@ -89,15 +89,6 @@ function move() {
   }
 }
 
-// test draw
-// draw();
-
-// test moving
-// setInterval(() => {
-//   move(); // move
-//   draw(); // draw new position
-// }, 200);
-
 // Start game function
 function startGame() {
   gameStarted = true;
@@ -194,5 +185,4 @@ function updateHighScore() {
   highScore.style.display = "block";
 }
 
-// https://www.youtube.com/watch?v=uyhzCBEGaBY
 //  it's some bug
