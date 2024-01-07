@@ -1,6 +1,8 @@
 const board = document.getElementById("game-border");
 const instructionText = document.getElementById("instruction-text");
 const logo = document.getElementById("logo");
+const score = document.getElementById("score");
+const highScore = document.getElementById("highScore");
 
 // Game variables
 const gridSize = 20;
@@ -16,6 +18,7 @@ function draw() {
   board.innerHTML = "";
   drawSnake();
   drawFood();
+  updateScore();
 }
 
 // Draw snake
@@ -160,4 +163,36 @@ function checkCollision() {
   }
 }
 
-function resetGame() {}
+function resetGame() {
+  updateHighScore();
+  stopGame();
+  snake = [{ x: 10, y: 10 }];
+  food = generateFood();
+  direction = "right";
+  gameSpeedDelay = 200;
+  updateScore();
+}
+
+function updateScore() {
+  const currentScore = snake.length - 1;
+  score.textContent = currentScore.toString().padStart(3, "0");
+}
+
+function stopGame() {
+  clearTimeout(gameInterval);
+  gameStarted = false;
+  instructionText.style.display = "block";
+  logo.style.display = "block";
+}
+
+function updateHighScore() {
+  const currentScore = snake.length - 1;
+  if (currentScore > highScore) {
+    highScore = currentScore;
+    highScore.textContent = highScore.toString().padStart(3, "0");
+  }
+  highScore.style.display = "block";
+}
+
+// https://www.youtube.com/watch?v=uyhzCBEGaBY
+//  it's some bug
