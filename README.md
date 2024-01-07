@@ -24,6 +24,9 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 | 3| [modal-window](https://github.com/MarcinSoltysik/practice-js/tree/main/03-modal-window)|
 | 4| [self-driving-car](https://github.com/MarcinSoltysik/practice-js/tree/main/04-self-driving-car)|
 | 5| [tetris-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/05-tetris-game)|
+| 6| [snake-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game)|
+
+https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game
 
 
 ### All projects have their own Readme file which contains:
@@ -68,8 +71,13 @@ As I continue to add to this digital garden, I hope to track my progress and gai
 
 ![tetris-gif](https://github.com/MarcinSoltysik/practice-js/assets/78354700/43060159-8256-48fc-852d-715272e7adca)
 
+<hr>
 
+# snake-game
 
+6. [snake-game ](https://github.com/MarcinSoltysik/practice-js/tree/main/06-snake-game)|
+
+![Nagraniezekranu2024-01-7o22 03 06-ezgif com-video-to-gif-converter](https://github.com/MarcinSoltysik/practice-js/assets/78354700/8e283613-c225-4ad6-bc8b-55b805e4ffd8)
 
 
 
